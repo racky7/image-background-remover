@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove Background</title>
+    <meta charset="UTF-8" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+   <h1 style="color: #ff0023;text-align:center;" class="my-2">Remove Image Background</h1>
+    
+   <div class="my-4 mb-3" style="width:60%; margin:0px auto;">
+      <input class="form-control" id="formFile" type="file" />
+    </div>
+	
+	<br>
+
+	<table id="myTable" hidden="true" class="table table-warning table-striped text-center">
+	<tr>
+    <td><div style="margin: auto; max-width: 800px;" id="result1"></div></td>
+	<td><div  id="convert"></div> </td>     
+    <td><div style="margin: auto; max-width: 800px;" id="result"></div></td>
+	</tr>
+	</table>
+  <br>
+  
+  <div style="text-align:center" ><button hidden="true" onClick="window.location.reload();" type="button" class="btn btn-danger" id="clearBtn">Clear Window</button> <button hidden="true" type="button" class="btn btn-success" id="downBtn"></button>
+  
+  </div>  
+  
+    
+    <script type="module" src="index.js"></script>
+    <script src="./node_modules/blueimp-load-image/js/load-image.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
