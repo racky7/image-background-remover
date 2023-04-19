@@ -37,7 +37,7 @@ document
       const response = await fetch("https://sdk.photoroom.com/v1/segment", {
         method: "POST",
         headers: {
-          "x-api-key": "102279905dd5fd330cfa4d33c0ee13646946d683"
+          "x-api-key": process.env.APIKEY
         },
         body: formData
       });
